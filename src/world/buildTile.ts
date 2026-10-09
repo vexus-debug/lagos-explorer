@@ -240,7 +240,6 @@ export function buildTile(t: TileFeatures): TileMesh {
           col.quad(p, q, [q[0], q[1] + 1.1, q[2]], [p[0], p[1] + 1.1, p[2]]);
         }
         gnd.quad([ra[0], ra[1] - 1.2, ra[2]], [rb[0], rb[1] - 1.2, rb[2]], [lb[0], lb[1] - 1.2, lb[2]], [la[0], la[1] - 1.2, la[2]], hex(0x6f6b64), [0, -1, 0]);
-        if (i % 2 === 0 && ya > 2) addProp("billboard", ax, -6, az, 0, 0.0001); // placeholder keeps arrays aligned
         continue;
       }
 
